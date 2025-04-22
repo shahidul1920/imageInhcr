@@ -1,9 +1,10 @@
 import React from 'react'
+import ImageEnhSection from '../component/ImageEnhSection'
 
 const Home = () => {
   return (
     <div>
-      Home
+      <ImageEnhSection />
     </div>
   )
 }
