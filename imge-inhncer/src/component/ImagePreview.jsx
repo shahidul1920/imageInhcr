@@ -1,13 +1,26 @@
 import React from "react";
 
 const ImagePreview = () => {
+  const img = false;
   return (
-    <div className="grid grid-cols-2 gap-4">
-      <div className="realPic bg-slate-70 p-6 flex justify-center items-center">
-        image here
+    <div className="flex items-center justify-center gap-4">
+      <div className={`realPic bg-slate-50 rounded-xl flex flex-col overflow-hidden ${img ? "h-auto" : "h-[200px]"}`}>
+        <h2 className="text-xl font-semibold text-center p-2 bg-slate-700 text-white w-full">
+          Original Image
+        </h2>
+        {img ? (
+          <img src="" className="w-full h-full object-cover" alt="" />
+        ) : (
+          <div className="noImgSec w-full h-full grid place-items-center bg-gray-400 text-gray-500">
+            No Image Selected
+          </div>
+        )}
       </div>
-      <div className="enhancedPic bg-slate-70 p-6 flex justify-center items-center">
-        image 2 here
+      <div className={`enhancedPic bg-slate-50 flex rounded-xl overflow-hidden flex-col ${img ? "h-auto" : "h-[200px]"}`}>
+        <h2 className="text-xl font-semibold text-center p-2 bg-slate-700 text-white w-full">
+          Inhanched Image
+        </h2>
+        <img src="" className="w-full h-full object-cover" alt="" />
       </div>
     </div>
   );

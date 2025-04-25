@@ -5,7 +5,7 @@ import ImagePreview from "../component/ImagePreview";
 const Home = () => {
   return (
     <div>
-      <div className="image-main bg-slate-800">
+      <div className="image-main bg-slate-800 flex flex-col gap-8 items-center justify-center h-screen">
         <ImageEnhSection />
         <ImagePreview />
       </div>
