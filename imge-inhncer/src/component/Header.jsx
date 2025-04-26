@@ -8,18 +8,18 @@ const Header = () => {
 
 
   return (
-    <header className="bg-slate-600 text-white shadow-md sticky top-0 z-50">
+    <header className="bg-slate-600 text-white shadow-md sticky top-0 z-50 px-4 md:px-6 xl:px-0">
       <div className="container mx-auto flex justify-between items-center py-4">
-        <div className="logoNnav flex gap-12 items-center justify-center">
+        <div className="logoNnav flex gap-6 md:gap-10 xl:gap-12 items-center justify-center">
           <div className="logo flex gap-2">
             <img
-              className="w-[40px]"
+              className="w-[30px] md:w-[40px]"
               src="./bucket-logo.png"
               alt="Image bucket"
             />
-            <h3 className="text-xl font-bold">Image Bucket</h3>
+            <h3 className="text-sm md:text-xl font-bold">Image Bucket</h3>
           </div>
-          <nav>
+          <nav className="hidden md:block">
             <ul className="flex gap-4 text-sm">
               <li>
                 <NavLink to="/">Home</NavLink>

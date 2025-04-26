@@ -3,8 +3,8 @@ import React from "react";
 const ImagePreview = () => {
   const img = false;
   return (
-    <div className="flex items-center justify-center gap-4">
-      <div className={`realPic bg-slate-50 rounded-xl flex flex-col overflow-hidden ${img ? "h-auto" : "h-[200px]"}`}>
+    <div className="flex flex-wrap items-center justify-center gap-4">
+      <div className={`realPic bg-slate-50 w-full md:w-auto rounded-xl flex flex-col overflow-hidden ${img ? "h-auto" : "h-[200px]"}`}>
         <h2 className="text-xl font-semibold text-center p-2 bg-slate-700 text-white w-full">
           Original Image
         </h2>
@@ -16,7 +16,7 @@ const ImagePreview = () => {
           </div>
         )}
       </div>
-      <div className={`enhancedPic bg-slate-50 flex rounded-xl overflow-hidden flex-col ${img ? "h-auto" : "h-[200px]"}`}>
+      <div className={`enhancedPic bg-slate-50 w-full md:w-auto flex rounded-xl overflow-hidden flex-col ${img ? "h-auto" : "h-[200px]"}`}>
         <h2 className="text-xl font-semibold text-center p-2 bg-slate-700 text-white w-full">
           Inhanched Image
         </h2>
